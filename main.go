@@ -11,6 +11,11 @@ import (
 	"path/filepath"
 )
 
+var (
+	Version  string
+	Revision string
+)
+
 func main() {
 	var folderName string
 	flag.StringVar(&folderName, "f", "", "command flag for specified folder")
